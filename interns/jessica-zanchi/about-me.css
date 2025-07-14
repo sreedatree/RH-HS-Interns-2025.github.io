@@ -1,59 +1,168 @@
 @font-face {
     font-family: titlefont;
-    src: url("fonts/rushford-clean-font/rushford.otf");
+    src: url("fonts/runtime-font/runtime.otf");
+}
+
+@font-face {
+    font-family: basicfont;
+    src: url("fonts/queensides-font/queensideslt.ttf");
+}
+
+@font-face {
+    font-family: basicbold;
+    src: url("fonts/queensides-font/queensidesbd.ttf");
+}
+
+.reveal {
+  opacity: 0 !important;
+  transform: translateY(80px) !important;
+  transition: 0.4s ease-out !important;
+}
+
+.reveal.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.revealleft {
+  opacity: 0 !important;
+  transform: translateX(-70px) !important;
+  transition: 0.4 ease-out !important;
+}
+
+.revealleft.show {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.revealright {
+  opacity: 0 !important;
+  transform: translateX(70px) !important;
+  transition: 0.4 ease-out !important;
+}
+
+.revealright.show {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.reveal2 {
+  opacity: 0 !important;
+  transform: translateY(80px) !important;
+  transition: 0.4s ease-out !important;
+}
+
+.reveal2.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.disable-scroll-reveal .reveal2 {
+  transition: none !important;
 }
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: white;
     font-size: 16px;
     font-family: "Arial Narrow", Helvetica, sans-serif;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 #splashscreen {
     background-image: url("images/prettycadobg.png");
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+#titlepic {
+    border-radius: 50%;
+    margin: 10px 2px;
+
+}
+
+.cirdecor {
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 10px 2px;
 }
 
 #titlestuff {
-    padding: 0 30px;
-    width: 60%;
+    padding: 0 50px;
+    width: 80%;
     color: white;
 }
 
-#titlestuff h1 {
+#titlestuff > h1 {
     font-family: titlefont, sans-serif;
-    font-size: 70pt;
+    font-size: 60pt;
+    margin: 10px;
     letter-spacing: 10px;
+    text-shadow: 0px 0px 20px black;
 }
 
-#titlestuff h2 {
+#titlestuff > h2 {
+    font-family: basicfont, sans-serif;
     font-size: 24pt;
     margin-top: 10px;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 20px black;
+
 }
 
 #bodycontent {
     background-color: white;
     width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 50vh;
 }
 
 #bodycontent h1 {
     font-size: 30pt;
-    font-family: titlefont, sans-serif;
+    font-family: basicfont, sans-serif;
     color: #333;
 }
+
+.linethrough {
+    width: 80vw;
+    border: none;
+    border-top: 3px solid rgb(74, 111, 52);
+    height: 0;
+    margin: 20px auto;
+}
+
+.whiteblock {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: white;
+    padding: 10px 7.5%;
+    margin: 40px 0;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.whiteblock h2 {
+    color: white;
+    background-color: rgb(74, 111, 52);
+    font-size: 2em;
+    font-family: basicbold, sans-serif;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
