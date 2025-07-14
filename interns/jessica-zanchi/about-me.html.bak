@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Meta tags for proper character encoding and responsive design -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="images/redhatlogo.png">
+
+	<!-- The title appears in the browser tab -->
+	<title>About Me - Jessica Zanchi</title>
+
+	<!-- Link to our external CSS file -->
+	<link rel="stylesheet" href="./about-me.css">
+</head>
+<body>
+	<div id="splashscreen">
+		<div id="titlestuff">
+			<h1>Jessica Zanchi</h1>
+			<h2>Red Hat High School Internship</h2>		
+		</div>
+	</div>
+	<div id="bodycontent">
+	<h1> jess zanchi</h1>
+	</div>
+</body>
+</html> 

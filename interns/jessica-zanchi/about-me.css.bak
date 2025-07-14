@@ -34,7 +34,7 @@ body {
 
 #titlestuff h1 {
     font-family: titlefont, sans-serif;
-    font-size: 70pt;
+    font-size: 80pt;
     letter-spacing: 10px;
 }
 
