@@ -128,7 +128,7 @@ body {
     background-color: white;
     width: 100vw;
     min-height: 50vh;
-}
+    box-shadow: 0 0 220px 220px white;
 
 #bodycontent h1 {
     font-size: 30pt;
@@ -165,4 +165,28 @@ body {
     letter-spacing: 1px;
     padding: 30px;
 }
+
+.greenblock {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: rgb(165, 185, 154);;
+    padding: 40px 7.5%;
+    margin: 40px 0;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    font-family: sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+.greenblock h2 {
+    color: rgb(74, 111, 52);;
+    background-color: white;
+    font-size: 2em;
+    font-family: basicbold, sans-serif;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
 
