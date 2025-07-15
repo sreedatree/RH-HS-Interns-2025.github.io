@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         },
-        { threshold: 0.2 }
+        { threshold: 0.4 }
     );
 
     reveals.forEach((el) => {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         },
-        { threshold: 0.2 }
+        { threshold: 0.4 }
     );
 
 	revealLefts.forEach((el) => {

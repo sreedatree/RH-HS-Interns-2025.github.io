@@ -4,13 +4,18 @@
 }
 
 @font-face {
-    font-family: basicfont;
+    font-family: dropline;
     src: url("fonts/queensides-font/queensideslt.ttf");
 }
 
 @font-face {
-    font-family: basicbold;
+    font-family: dropline;
     src: url("fonts/queensides-font/queensidesbd.ttf");
+}
+
+@font-face {
+    font-family: dropline;
+    src: url("fonts/dropline-font/dropline.otf");
 }
 
 .reveal {
@@ -63,6 +68,7 @@
 
 * {
     box-sizing: border-box;
+    transition: 0.2s ease-in-out;
 }
 
 body {
@@ -72,6 +78,18 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+img {
+  border-radius: 10px;
+}
+
+a:hover{
+  transform: scale(1.1);
+}
+
+p {
+  font-family: dropline, sans-serif;
 }
 
 #splashscreen {
@@ -115,7 +133,7 @@ body {
 }
 
 #titlestuff > h2 {
-    font-family: basicfont, sans-serif;
+    font-family: dropline, sans-serif;
     font-size: 24pt;
     margin-top: 10px;
     letter-spacing: 4px;
@@ -124,7 +142,7 @@ body {
 }
 
 #bodycontent {
-    background-image: url("images/tropicalbg.png");
+    background-image: url("images/whitefurbg.avif");
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
@@ -134,7 +152,7 @@ body {
 
 #bodycontent h1 {
     font-size: 30pt;
-    font-family: basicfont, sans-serif;
+    font-family: dropline, sans-serif;
     color: #333;
 }
 
@@ -147,44 +165,50 @@ body {
 }
 
 .whiteblock {
-    width: 90vw;
-    min-height: 30vh;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 15px 2px rgba(164, 164, 164, 0.5);
-    border-radius: 10px;
-    padding: 40px 1.5%;
-    margin: 40px auto;
-    display: flex;
-    gap: 40px;
-    position: relative;
-    font-family: sans-serif;
-    justify-content: center;
+  width: 90vw;
+  min-height: 30vh;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 15px 2px rgba(164, 164, 164, 0.5);
+  border-radius: 10px;
+  padding: 40px 1.5%;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  font-family: sans-serif;
+  justify-content: center;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .whiteblock h2 {
-    color: white;
-    background-color: rgb(74, 111, 52);
+    color: rgb(45, 117, 28);
+    background: rgba(177, 165, 165, 0.25);
     font-size: 2em;
-    font-family: basicbold, sans-serif;
+    font-family: titlefont, sans-serif;
     letter-spacing: 1px;
     padding: 30px;
     margin-bottom: 0;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    
 }
 
 .whiteblock h3 {
-  color: rgb(122, 205, 34);
-  background-color: aqua;
-  font-size: 1.2em;
-  font-family: basicbold, sans-serif;
-  letter-spacing: 1px;
-  padding: 30px;
-  margin-top: 0;
+    color: rgb(57, 88, 47);
+    font-size: 1.2em;
+    font-family: titlefont, sans-serif;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    margin-top: 0;
+    border-radius: 8px;
 }
 
 .greenblock {
     width: 100vw;
     min-height: 30vh;
-    background-color: rgb(47, 42, 33);
+    background-color: rgb(255, 255, 255);
     padding: 40px 7.5%;
     margin: 40px 0;
     display: flex;
@@ -196,10 +220,10 @@ body {
 }
 
 .greenblock h2 {
-    color: rgb(66, 56, 36);
+    color: rgb(58, 48, 48);
     background-color: white;
     font-size: 2em;
-    font-family: basicbold, sans-serif;
+    font-family: dropline, sans-serif;
     letter-spacing: 1px;
     padding: 30px;
     margin-bottom: 0;
@@ -209,7 +233,7 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(70, 63, 50);
   font-size: 1.2em;
-  font-family: basicbold, sans-serif;
+  font-family: dropline, sans-serif;
   letter-spacing: 1px;
   margin-top: 0;
 }
