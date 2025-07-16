@@ -4,12 +4,12 @@
 }
 
 @font-face {
-    font-family: dropline;
+    font-family: queensidelt;
     src: url("fonts/queensides-font/queensideslt.ttf");
 }
 
 @font-face {
-    font-family: dropline;
+    font-family: queensidebd;
     src: url("fonts/queensides-font/queensidesbd.ttf");
 }
 
@@ -69,6 +69,7 @@
 * {
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
+    font-family: dropline, sans-serif;
 }
 
 body {
@@ -142,7 +143,7 @@ p {
 }
 
 #bodycontent {
-    background-image: url("images/whitefurbg.avif");
+    background-image: url("images/greenmarbel.webp");
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
